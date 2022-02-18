@@ -10,6 +10,9 @@ There are several ways you can use this repository:
 - VS Code installed
 - VS Code Remote - Containers extension installed
 
+Now open VS Code and execute command `Remote-Containers: Open Folder in Container`
+
+
 # Resources
 - https://dominikberner.ch/using-devcontainers-with-cpp/
 - https://github.com/axel-op/vscode-devcontainer-cpp-conan
