@@ -1,4 +1,5 @@
 {
+    "name": "Conan_Cpp",
     "build": {
         "dockerfile": "Dockerfile"
     },
