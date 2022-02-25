@@ -20,8 +20,13 @@ Now open VS Code and execute command (Ctrl+Shift+P) `Remote-Containers: Open Fol
 
 Now open VS Code and execute command (Ctrl+Shift+P) `Remote-Containers: Open Folder in Container` or click "Reopen in Container" on the popup.
 
+<<<<<<< Updated upstream
 # Sources 
+=======
+# Sources
+>>>>>>> Stashed changes
 - https://dominikberner.ch/using-devcontainers-with-cpp/
 - https://github.com/axel-op/vscode-devcontainer-cpp-conan
 - https://github.com/bredej/vscode-conan-remote
+- https://github.com/mymichu/workspace-c-cpp-conan
 
