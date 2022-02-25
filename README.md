@@ -33,6 +33,10 @@ There are several ways you can use this repository:
 4. Build it with `conan install --build=missing`
 5. Inspect local cache with `code ~/.conan/data`
 
+## Lesson 2
+1. Discard all local changes (or commit if you want) `git reset --hard`
+2. Checkout branch for Lesson2 `git checkout Lesson2`
+
 # Sources 
 - https://dominikberner.ch/using-devcontainers-with-cpp/
 - https://github.com/axel-op/vscode-devcontainer-cpp-conan
