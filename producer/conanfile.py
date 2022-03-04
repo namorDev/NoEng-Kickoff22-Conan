@@ -1,14 +1,22 @@
-from conans import ConanFile
-from conan.tools.cmake import CMake
+from conans import ConanFile , tools, CMake
+from conan.tools.cmake import CMakeToolchain
 
 class MyProjectConan(ConanFile):
-    name = "my_project"
+    name = "producer"
+    version = "0.1"
     settings = "os", "compiler", "build_type", "arch"
-    requires = "gtest/1.10.0"
-
-    generators = "CMakeToolchain", "CMakeDeps"
+    generators = "cmake"
+    exports_sources = "*"
+    build_requires = "gtest/1.11.0"
 
     def build(self):
         cmake = CMake(self)
         cmake.configure()
         cmake.build()
+
+    def package(self):
+        self.copy("*.h", dst="include")
+        self.copy("*.a", dst="lib", keep_path=False)
+
+    def package_info(self):
+        self.cpp_info.libs = ["hello"]
