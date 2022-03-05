@@ -15,8 +15,9 @@ class MyProjectConan(ConanFile):
         cmake.build()
 
     def package(self):
-        self.copy("*.h", dst="include")
+        self.copy("*.h", dst="include", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["hello"]
+        self.cpp_info.libs = ["Producer"]
+        self.cpp_info.libdirs = ['lib']

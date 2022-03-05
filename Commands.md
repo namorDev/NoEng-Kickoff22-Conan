@@ -43,6 +43,19 @@
 - conan install producer/0.1@user/testing --build=hello
 - conan search producer/0.1@user/testing
 
+# Lesson 4 - Use the package in consumer
+- conan remove producer
+- cd consumer/build
+- conan install .. --build=missing
+- conan export ../../producer user/testing
+- include hello in main.cpp 
+- conan install .. --build=missing
+- inspect conan cache: code ~/.conan/data 
+- forget to change add_executable to add_library
+- cmake ..
+- cmake --build .
+- bin/Consumer
+
 
 
 
