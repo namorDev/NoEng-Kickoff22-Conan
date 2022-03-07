@@ -73,3 +73,4 @@ optional to show:
 - how to upload a package
 - how to install config / profile
 - test_package
+- Adding conan config and remotes is usually done within the dockerfile in enterprise usage
