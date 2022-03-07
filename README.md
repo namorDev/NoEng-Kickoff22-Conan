@@ -27,8 +27,9 @@ There are several ways you can use this repository:
 9. Checkout the recipes in the local cache `conan search`
 
 ## Lessons
-- For the first start of this hands-on checkout Lesson1: `git checkout Lesson`
-- To get on a stable revision for each exercise, you can always checkout a specific tag/branch
+- For the first start of this hands-on checkout tag for Lesson1: `git checkout tags/Lesson1` (you will be in detached HEAD)
+- To get on a stable revision for each exercise, you can always checkout a specific tag
+- To get back to main branch you can always use `git checkout main`
 - Check the `Commands.md` file for the commands used in each lesson
 
 
