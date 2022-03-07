@@ -74,3 +74,4 @@ optional to show:
 - how to install config / profile
 - test_package
 - Adding conan config and remotes is usually done within the dockerfile in enterprise usage
+- how to create new conanfile from template using `conan new`
