@@ -6,5 +6,5 @@ project(Producer)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-add_executable(${PROJECT_NAME} src/hello.cpp)
+add_library(${PROJECT_NAME} src/hello.cpp)
 target_link_libraries(${PROJECT_NAME} PUBLIC ${CONAN_LIBS})
