@@ -7,6 +7,7 @@ class MyProjectConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     exports_sources = "*"
+    build_requires = "gtest/1.11.0"
 
     def build(self):
         cmake = CMake(self)
