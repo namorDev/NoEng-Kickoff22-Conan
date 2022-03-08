@@ -1,5 +1,6 @@
 [requires]
 poco/1.9.4
+producer/0.1@user/testing
 
 [generators]
 cmake
