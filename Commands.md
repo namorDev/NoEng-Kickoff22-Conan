@@ -63,16 +63,29 @@
 - inspect profiles
 - conan install .. -pr ../../profiles/my_profile
 - add remote from namordev (because already built with this profile, otherwise poco is built again)
-- cd consumer/build
+- this might not work because you the permissions. Show how a package is uploaded while the others build again poco (See Section "How to upload a package to a remote repo")
+- cd consumer
+- rm -rf build
+- mkdir build
+- cd build
 - conan install .. -pr ../../profiles/my_profile
 - cmake .. -DCMAKE_CXX_COMPILER=clang++-12
 - cmake --build .
 
-TODO: get it from artifactory
-
 optional to show: 
-- how to upload a package
 - how to install config / profile
 - test_package
 - Adding conan config and remotes is usually done within the dockerfile in enterprise usage
 - how to create new conanfile from template using `conan new`
+
+# How to upload a package to a remote repo
+1. Add the remote (get the link from local repo in artifactory under Artifacts -> repo name -> Set me up)
+conan remote add namordev https://namordev.jfrog.io/artifactory/api/conan/namordevrepo
+2. List packages in remote to get login prompt: `conan search -r=namordev`
+3. Login
+4. Upload package (must already be built): `conan upload producer/0.1@user/testing --all -r=namordev` 
+5. Search again to make it visible in artifactory: `conan search -r=namordev`
+6. Test it out by removing any old package in local repo: `conan remove producer/0.1@user/testing`
+7. cd consumer/build
+8. conan install .. -pr ../../profiles/my_profile
+9. See the log outputs: not found in local cache -> trying with conancenter -> trying with namordev --> It will first look in local cache, then in the remote repos by index order
