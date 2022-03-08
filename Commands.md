@@ -34,6 +34,7 @@
 # Lesson 3 - Create the package as library
 - modify hello.cpp and hello.h
 - modify CMakeLists.txt and change to a library
+- cd producer
 - conan create . user/testing
 - conan search
 - conan search producer/0.1@user/testing
@@ -42,7 +43,7 @@
 - conan export . user/testing
 - conan search
 - conan search producer/0.1@user/testing
-- conan install producer/0.1@user/testing --build=hello
+- conan install producer/0.1@user/testing --build
 - conan search producer/0.1@user/testing
 - inspect conan cache: code ~/.conan/data 
 
