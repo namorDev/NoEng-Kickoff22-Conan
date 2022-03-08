@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     vim \
     git \
     clang\
+    clang-12\
     make\
     gdb \
     ssh \

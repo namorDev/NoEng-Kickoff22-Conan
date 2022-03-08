@@ -26,20 +26,15 @@ There are several ways you can use this repository:
 8. Checkout the remote list `conan remote list`
 9. Checkout the recipes in the local cache `conan search`
 
-## Lesson 1
-1. Checkout branch Lesson1 `git checkout Lesson1`
-2. Install the dependency specified in conanfile.txt by execute command `conan install`
-3. Inspect local cache with `conan search` -> We have the recipe but it's not built yet
-4. Build it with `conan install --build=missing`
-5. Inspect local cache with `code ~/.conan/data`
+## Lessons
+- For the first start of this hands-on checkout tag for Lesson1: `git checkout tags/Lesson1` (you will be in detached HEAD)
+- To get on a stable revision for each exercise, you can always checkout a specific tag
+- To get back to main branch you can always use `git checkout main`
+- Check the `Commands.md` file for the commands used in each lesson
 
-## Lesson 2
-1. Discard all local changes (or commit if you want) `git reset --hard`
-2. Checkout branch for Lesson2 `git checkout Lesson2`
 
 # Sources 
 - https://dominikberner.ch/using-devcontainers-with-cpp/
 - https://github.com/axel-op/vscode-devcontainer-cpp-conan
 - https://github.com/bredej/vscode-conan-remote
 - https://github.com/mymichu/workspace-c-cpp-conan
-
