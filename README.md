@@ -33,6 +33,8 @@ There are several ways you can use this repository:
 - To get back to main branch you can always use `git checkout main`
 - Check the `Commands.md` file for the commands used in each lesson
 
+# Conan Cheatsheet
+- https://github.com/namorDev/Conan-Cheatsheet
 
 # Sources 
 - https://dominikberner.ch/using-devcontainers-with-cpp/
