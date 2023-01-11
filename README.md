@@ -36,7 +36,7 @@ There are several ways you can use this repository:
 # Conan Cheatsheet
 - https://github.com/namorDev/Conan-Cheatsheet
 
-# Sources 
+# Resources 
 - https://dominikberner.ch/using-devcontainers-with-cpp/
 - https://github.com/axel-op/vscode-devcontainer-cpp-conan
 - https://github.com/bredej/vscode-conan-remote
